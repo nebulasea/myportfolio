@@ -92,7 +92,7 @@
     //typed js
     $(".typed").typed({
       strings: [
-        "My Name is Keli", "I'm a Web Developer"
+        "My Name is Keli Poole", "I'm a Web Designer"
       ],
       typeSpeed: 100,
       backDelay: 900,
@@ -100,7 +100,6 @@
       loop: true
     });
 
-    //contact
     $('input').blur(function () {
 
       // check if the input has any value (if we've typed into it)
@@ -143,19 +142,15 @@
     window
       .addEventListener('scroll', function (e) {
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-          shrinkOn = 300,
-          header = document.querySelector(".for-sticky");
-        if (distanceY > shrinkOn) {
-          classie.add(header, "opacity-nav");
-        } else {
-          if (classie.has(header, "opacity-nav")) {
-            classie.remove(header, "opacity-nav");
-          }
-        }
+          shrinkOn = 300
+        // const header = document.querySelector(".for-sticky"); if (distanceY >
+        // shrinkOn) {   classie.add(header, "opacity-nav"); } else {   if
+        // (classie.has(header, "opacity-nav")) {     classie.remove(header,
+        // "opacity-nav");   } }
       });
   }
 
-  window.onload = inits();
+  inits();
 
   //nav-active
   function onScroll(event) {
