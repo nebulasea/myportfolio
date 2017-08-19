@@ -114,7 +114,7 @@
     $('.portfolio-image li a').magnificPopup({
       type: 'image',
       gallery: {
-        enabled: false
+        enabled: true
       }
       // other options
     });
